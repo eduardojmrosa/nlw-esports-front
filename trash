@@ -1,66 +1,38 @@
- <a href="" className="relative rounded-lg overflow-hidden">
-          <img src="/game1.png"></img>
-          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0   ">
-            <strong className="font-bold text-white block">
-              League of Legends
-            </strong>
-            <span className="text-zinc-300 text-sm block mt-1">
-              {" "}
-              4 Anúncios
-            </span>
-          </div>
-        </a>
-        <a href="" className="relative rounded-lg overflow-hidden">
-          <img src="/game2.png"></img>
-          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0   ">
-            <strong className="font-bold text-white block">Dota 2</strong>
-            <span className="text-zinc-300 text-sm block mt-1">
-              {" "}
-              4 Anúncios
-            </span>
-          </div>
-        </a>
-        <a href="" className="relative rounded-lg overflow-hidden">
-          <img src="/game3.png"></img>
-          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0   ">
-            <strong className="font-bold text-white block">
-              Counter Strike
-            </strong>
-            <span className="text-zinc-300 text-sm block mt-1">
-              {" "}
-              4 Anúncios
-            </span>
-          </div>
-        </a>
-        <a href="" className="relative rounded-lg overflow-hidden">
-          <img src="/game4.png"></img>
-          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0   ">
-            <strong className="font-bold text-white block">Apex</strong>
-            <span className="text-zinc-300 text-sm block mt-1">
-              {" "}
-              4 Anúncios
-            </span>
-          </div>
-        </a>
-        <a href="" className="relative rounded-lg overflow-hidden">
-          <img src="/game5.png"></img>
-          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0   ">
-            <strong className="font-bold text-white block">Fortnite</strong>
-            <span className="text-zinc-300 text-sm block mt-1">
-              {" "}
-              4 Anúncios
-            </span>
-          </div>
-        </a>
-        <a href="" className="relative rounded-lg overflow-hidden">
-          <img src="/game6.png"></img>
-          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0   ">
-            <strong className="font-bold text-white block">
-              World of Warcraft
-            </strong>
-            <span className="text-zinc-300 text-sm block mt-1">
-              {" "}
-              4 Anúncios
-            </span>
-          </div>
-        </a>
+<button className="w-8 h-8 rounded bg-zinc-900" title="Segunda">S</button>
+<button className="w-8 h-8 rounded bg-zinc-900" title="Terça">T</button>
+<button className="w-8 h-8 rounded bg-zinc-900" title="Quarta">Q</button>
+<button className="w-8 h-8 rounded bg-zinc-900" title="Quinta">Q</button>
+<button className="w-8 h-8 rounded bg-zinc-900" title="Sexta">S</button>
+<button className="w-8 h-8 rounded bg-zinc-900" title="Sábado">S</button>
+<button className="w-8 h-8 rounded bg-zinc-900" title="Domingo">D</button>
+
+<Input
+                id="game"
+                placeholder="Selecione o game que deseja jogar"
+              />
+
+
+              <Select.Root>
+                <Select.Trigger>
+                  <Select.Value />
+                  <Select.Icon />
+                  <CheckIcon />
+                </Select.Trigger>
+
+                <Select.Portal className="bg-zinc-900 px-4 py-3 rounded text-sm placeholder:text-zinc-500">
+                  <Select.Content>
+                    <Select.ScrollUpButton />
+                    <ChevronUpIcon />
+                    <Select.Viewport>
+                      <Select.Group>
+                        <Select.Label>Banana</Select.Label>
+                        <Select.Item value="Banana">
+                          <Select.ItemText />
+                          <Select.ItemIndicator />
+                        </Select.Item>
+                      </Select.Group>
+                    </Select.Viewport>
+                    <Select.ScrollDownButton />
+                  </Select.Content>
+                </Select.Portal>
+              </Select.Root>
