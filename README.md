@@ -1,2 +1,2 @@
 # nlw-esports-front
-frontend do nlw esports constrúido com react.js, tailwindcss e typescript
+frontend do nlw esports construído com react.js, tailwindcss e typescript
